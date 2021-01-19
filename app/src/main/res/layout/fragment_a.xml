@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppToolbar"
+        app:popupTheme="@style/AppToolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/b_c_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_background_blue"
+            android:minHeight="50dp"
+            android:text="@string/b_and_c"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_buttons"/>
+
+        <Button
+
+            android:id="@+id/d_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_background_blue"
+            android:minHeight="50dp"
+            android:text="@string/d"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_buttons"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:text="@string/exchange_rate_for"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_buttons"/>
+
+        <ImageView
+            android:id="@+id/main_currency_flag"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/main_currency_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_margin"
+            android:layout_marginRight="@dimen/standard_margin"
+            android:padding="@dimen/standard_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_currency"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exchange_rates_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/standard_margin"/>
+
+
+</LinearLayout>

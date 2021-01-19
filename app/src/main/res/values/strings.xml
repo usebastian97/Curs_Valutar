@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Curs Valutar</string>
+    <string name="a_fragment_title">Cursul de azi</string>
+    <string name="b_fragment_title">Raport evolutie interval</string>
+    <string name="d_fragment_title">Istoric rapoarte</string>
+    <string name="d_fragment_details_title">Istoric rapoarte-detaliu</string>
+
+
+    <string name="choose_currency">Choose currency  &gt;</string>
+    <string name="choose_start_date">Choose start date  &gt;</string>
+    <string name="choose_end_date">Chose end date  &gt;</string>
+
+    <string name="generate_graph">Generate graph</string>
+    <string name="generate_list">Generate list</string>
+
+    <string name="list_reports">List reports (min/max values)</string>
+    <string name="graph_reports">Graph reports</string>
+
+
+    <string name="b_and_c">B and C</string>
+    <string name="d">D</string>
+
+    <string name="exchange_rate_for">Exchange rate for </string>
+    <string name="pick_currency">Pick currency</string>
+
+    <string name="start_date">Start date:\u0020</string>
+    <string name="end_date">End date:\u0020</string>
+    <string name="generated_at">Generated at:\u0020</string>
+    <string name="graph_report_for"> Graph report for\u0020</string>
+    <string name="min_max_values_for_all_currencies_vs">Min max values report for all currencies vs\u0020</string>
+</resources>

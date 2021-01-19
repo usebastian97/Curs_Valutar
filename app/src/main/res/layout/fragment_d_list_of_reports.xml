@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppToolbar"
+        app:popupTheme="@style/AppToolbar"/>
+
+
+    <!--        buttons graph and list-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/graph_reports"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_background_magenta"
+            android:minHeight="30dp"
+            android:text="@string/graph_reports"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_buttons"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/list_reports"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_background_magenta"
+            android:minHeight="30dp"
+            android:text="@string/list_reports"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_buttons"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_of_reports"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/standard_margin"/>
+
+
+</LinearLayout>

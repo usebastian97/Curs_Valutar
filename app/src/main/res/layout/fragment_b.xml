@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppToolbar"
+        app:popupTheme="@style/AppToolbar"/>
+
+
+<!--    choose currency and dates-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/standard_margin">
+
+
+        <Button
+            android:id="@+id/choose_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/choose_start_date"
+            android:minHeight="40dp"
+            android:padding="@dimen/standard_margin"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_size_buttons"/>
+
+
+        <Button
+            android:id="@+id/choose_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:hint="@string/choose_end_date"
+            android:padding="@dimen/standard_margin"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_size_buttons"/>
+
+        <Button
+            android:id="@+id/choose_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/choose_currency"
+            android:padding="@dimen/standard_margin"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_size_buttons"/>
+
+<!--        buttons graph and list-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/generate_graph_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:background="@drawable/rounded_background_magenta"
+                android:minHeight="30dp"
+                android:text="@string/generate_graph"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_buttons"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/generate_list_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:background="@drawable/rounded_background_magenta"
+                android:minHeight="30dp"
+                android:text="@string/generate_list"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_buttons"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/graph_container"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textViewGraphTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_buttons"/>
+
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph"
+                android:layout_width="320dp"
+                android:layout_height="200dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/min_max_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_buttons"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/min_max_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/standard_margin"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

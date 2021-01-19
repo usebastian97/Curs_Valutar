@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">4dp</dimen>
+    <dimen name="text_size_buttons">20sp</dimen>
+    <dimen name="rounded_shape_corner_radius">10dp</dimen>
+
+    <dimen name="text_size_currency">24sp</dimen>
+    <dimen name="text_size_list_item_small">14sp</dimen>
+
+    <dimen name="margin_big">40dp</dimen>
+
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffffffff"/>
+
+    <solid android:color="@color/blue_buttons_background_active"/>
+
+    <padding
+        android:bottom="8dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp"/>
+
+    <corners
+        android:bottomLeftRadius="@dimen/rounded_shape_corner_radius"
+        android:bottomRightRadius="@dimen/rounded_shape_corner_radius"
+        android:topLeftRadius="@dimen/rounded_shape_corner_radius"
+        android:topRightRadius="@dimen/rounded_shape_corner_radius"/>
+</shape>
