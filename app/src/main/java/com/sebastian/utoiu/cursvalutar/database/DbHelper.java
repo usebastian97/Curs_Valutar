@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class DbHelper extends SQLiteOpenHelper
 {
 	private static final String DATABASE_NAME = "curs.db";
-	private static final int DATABASE_VERSION = 43;
+	private static final int DATABASE_VERSION = 1;
 
 	static DbHelper newInstance( boolean onSdcard )
 	{
